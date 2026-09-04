@@ -1,3 +1,4 @@
+# two units from the red arc on the left base on the edge of the thick black line.
 from QuadBotPortMap import *
 drivebase.straight(300)
 drivebase.turn(90)
