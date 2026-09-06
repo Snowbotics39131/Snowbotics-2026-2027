@@ -1,3 +1,5 @@
+#2 from red line
+#0.5 from black line
 from QuadBotPortMap import *
 drivebase.settings(straight_speed=300)
 #drivebase.straight(605)
