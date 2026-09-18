@@ -1,5 +1,5 @@
 #2 from red line
-# A third from black line
+# at black line
 # facing right
 from PortMap2026 import *
 drivebase.settings(straight_speed=300)
