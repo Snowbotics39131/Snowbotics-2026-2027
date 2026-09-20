@@ -6,11 +6,11 @@ from pybricks.tools import *
 
 hub = InventorHub()
 
+motorRight = Motor(Port.A, Direction.CLOCKWISE)
 motorLeft = Motor(Port.B, Direction.COUNTERCLOCKWISE)
-motorRight = Motor(Port.C, Direction.CLOCKWISE)
 moterback = Motor(Port.D, Direction.CLOCKWISE)
 moterfront = Motor(Port.F, Direction.CLOCKWISE)
-colorSensorLeft = ColorSensor(Port.A)
+colorSensorLeft = ColorSensor(Port.C)
 colorSensorRight = ColorSensor(Port.E)
 drivebase = DriveBase(motorLeft,motorRight,56,96.5)
 
