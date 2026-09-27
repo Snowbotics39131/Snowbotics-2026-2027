@@ -19,21 +19,21 @@
 #- Which motors you're using (older motors sometimes aren't as precise)
 TEST_ARCS = True
 from PortMapUltimate import *
-drivebase.straight(100)
+drivebase.straight(100) #100 N
 drivebase.turn(90)
-drivebase.straight(100)
+drivebase.straight(100) #100 E
 drivebase.turn(90)
-drivebase.straight(100)
+drivebase.straight(100) #0 N
 drivebase.turn(-90)
-drivebase.straight(200)
+drivebase.straight(200) #300 E
 drivebase.turn(90)
-drivebase.straight(-100)
+drivebase.straight(-100) #100 N
 drivebase.turn(90)
 if TEST_ARCS:
-    drivebase.straight(100, then=Stop.NONE)
+    drivebase.straight(100, then=Stop.NONE) #200 E
     drivebase.arc(50, 180, then=Stop.NONE)
-    drivebase.arc(-50, 180, then=Stop.NONE)
-    drivebase.straight(100)
+    drivebase.arc(-50, 180, then=Stop.NONE) #300 N
+    drivebase.straight(100) #100 E
 else:
     drivebase.straight(100)
     drivebase.turn(90)

@@ -1,0 +1,17 @@
+colorful "quad bot":
+x: 2; y: -3.5; angle: -5
+x: 2; y: -4; angle: -7 worst
+x: 1; y: -3 best
+x: 1.5; y: -3
+x: 2; y: -4 worst
+black new robot:
+x: 2; y: -3.5
+x: 1.5; y: -3.5 best
+x: 2.5; y: -3.5
+x: 2.5; y: -4
+x: 3.5; y: -4.5 worst
+
+second test set:
+black new robot:
+x: 1.5; y: -3 original battery
+x: 3; y: -4.5 new battery
