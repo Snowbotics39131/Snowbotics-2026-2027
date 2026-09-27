@@ -1,5 +1,5 @@
 #This is a test of drivebase precision based on a Hilbert curve.
-#The robot should end up 300mm forward from where it started and should not have changed position horizontally.
+#The robot should end up in the same place it started in the same orientation.
 #Make sure you control for the following things:
 #- Everything in drivebase.settings()
 #  - Speed and acceleration, both linear and angular
@@ -49,3 +49,4 @@ drivebase.turn(90)
 drivebase.straight(100)
 drivebase.turn(90)
 drivebase.straight(100)
+drivebase.straight(-300)
