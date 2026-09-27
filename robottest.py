@@ -6,6 +6,15 @@
 #- Gyroscope or lack thereof
 #- No attachment
 #- Battery voltage
+#Some things it might also be nice to control for, but it's not as critical:
+#- Wheels being clean
+#- Table:
+#  - Flat (as in angle - measure with a level)
+#  - Not bumpy (check for sand, crumbs, small pieces, etc. under the mat)
+#  - Proper material (preferably FLL mat - smooth and with a little friction)
+#  - Clean
+#- Which hub you're using (the IMUs can slightly differ sometimes)
+#- Which motors you're using (older motors sometimes aren't as precise)
 from PortMapUltimate import *
 drivebase.straight(100)
 drivebase.turn(90)
