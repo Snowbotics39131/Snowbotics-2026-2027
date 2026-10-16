@@ -8,8 +8,9 @@
 #You may consider using it if you're low on time or you don't have a bar for the front of the robot.
 from pybricks.hubs import InventorHub
 from pybricks.tools import *
+from gobetweenhomes import *
 hub = InventorHub()
-selection = hub_menu(1, 2, 3, 4)
+selection = hub_menu(1, 2, 3, 4, 'L', 'R')
 if selection == 1:
     import drone
 elif selection == 2:
@@ -18,6 +19,10 @@ elif selection == 3:
     import rightmaprun
 elif selection == 4:
     import practicesnowbotics39131run
+elif selection == 'L':
+    homebase(-90)
+elif selection == 'R':
+    homebase(90)
 else:
     print('The sky is falling.')
     hub.speaker.beep()
