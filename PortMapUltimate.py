@@ -4,3 +4,7 @@ try:
 except OSError:
     from QuadBotPortMap import *
     print("quad bot detected")
+except ModuleNotFoundError:
+    # The pybricks module doesn't exist in CPython.
+    from fakeportmap import *
+    print("simulated turtle robot detected")
