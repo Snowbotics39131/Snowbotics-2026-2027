@@ -10,7 +10,7 @@ from pybricks.hubs import InventorHub
 from pybricks.tools import *
 from gobetweenhomes import *
 hub = InventorHub()
-selection = hub_menu(1, 2, 3, 4, 'L', 'R')
+selection = hub_menu(1, 2, 3, 4, 5, 'L', 'R')
 if selection == 1:
     import drone
 elif selection == 2:
@@ -23,6 +23,8 @@ elif selection == 'L':
     homebase(-90)
 elif selection == 'R':
     homebase(90)
+elif selection == 5:
+    import Map_CollinAttachent
 else:
     print('The sky is falling.')
     hub.speaker.beep()
