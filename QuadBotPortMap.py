@@ -16,9 +16,13 @@ drivebase = DriveBase(motorLeft,motorRight,56,96.5)
 
 drivebase.use_gyro(True)
 
-print(hub.battery.voltage())
-print(motorAttachment.control.pid())
-print(motorAttachment.control.target_tolerances())
+voltage=hub.battery.voltage()
+print('voltage (mV):', hub.battery.voltage())
+if voltage < 7900:
+   print('Battery is low. Robot may not behave correctly.')
+print('motor pid:', motorAttachment.control.pid())
+print('motor tolerances:', motorAttachment.control.target_tolerances())
+print('drivebase settings:', drivebase.settings())
 
 #gear=0 is back left gear; gear=1 is back right gear; gear=2 is front left gear; gear=3 is front right gear
 async def shift(gear):
