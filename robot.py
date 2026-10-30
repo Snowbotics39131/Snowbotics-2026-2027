@@ -3,6 +3,7 @@
 #2. Garden skylight: with the bar on the front, pointed forward in left home, back left corner at (8, 1)
 #   This run starts in the left red home and end in the right blue home.
 #3. Right map run: with the many-purposed attachment, pointed forward in right home, back right corner at (-8, 5) from the corner of the launch area
+#5. In red facing right (0, 15)
 #
 #4 is an alternative to 2 that just goes from the left home to the right without doing any missions.
 #You may consider using it if you're low on time or you don't have a bar for the front of the robot.
@@ -10,7 +11,7 @@ from pybricks.hubs import InventorHub
 from pybricks.tools import *
 from gobetweenhomes import *
 hub = InventorHub()
-selection = hub_menu(1, 2, 3, 4, 5, 'L', 'R')
+selection = hub_menu(1, 2, 3, 4, 5, 6, 'L', 'R')
 if selection == 1:
     import drone
 elif selection == 2:
@@ -25,6 +26,9 @@ elif selection == 'R':
     homebase(90)
 elif selection == 5:
     import Map_CollinAttachent
+elif selection == 6:
+    import seedexplosion
+
 else:
     print('The sky is falling.')
     hub.speaker.beep()
