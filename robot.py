@@ -4,6 +4,7 @@
 #   This run starts in the left red home and end in the right blue home.
 #3. Right map run: with the many-purposed attachment, pointed forward in right home, back right corner at (-8, 5) from the corner of the launch area
 #5. In red facing right (0, 15)
+#6. located on the left base on the thick line one square away from the red arc
 #
 #4 is an alternative to 2 that just goes from the left home to the right without doing any missions.
 #You may consider using it if you're low on time or you don't have a bar for the front of the robot.
@@ -28,7 +29,6 @@ elif selection == 5:
     import Map_CollinAttachent
 elif selection == 6:
     import seedexplosion
-
 else:
     print('The sky is falling.')
     hub.speaker.beep()
