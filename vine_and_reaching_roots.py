@@ -1,0 +1,11 @@
+from QuadBotPortMap import*
+drivebase.straight(-170)
+drivebase.turn(45)
+drivebase.straight(-620)
+drivebase.settings(straight_speed=70, turn_rate=60)
+drivebase.turn(-43)
+drivebase.straight(-110)
+drivebase.straight(120)
+drivebase.settings(straight_speed=350, turn_rate=150)
+drivebase.turn(43)
+drivebase.straight(1000)
