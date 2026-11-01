@@ -2,7 +2,7 @@
 #1. Drone: pointed right in left home, front right corner of robot at (17, 0)
 #2. Garden skylight: with the bar on the front, pointed forward in left home, back left corner at (8, 1)
 #   This run starts in the left red home and end in the right blue home.
-#3. Right map run: with the many-purposed attachment, pointed forward in right home, back right corner at (-8, 5) from the corner of the launch area
+#3. Right map run: with the many-purposed attachment, pointed forward in right home, back right corner at (-8, 4) from the corner of the launch area
 #5. In red facing right (0, 15)
 #6. located on the left base on the thick line one square away from the red arc
 #7. 3rd black line from red and on the thick horizontal black line
