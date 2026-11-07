@@ -3,6 +3,7 @@
 #The first two of those are quite consistent; the third is untested.
 #Alignment: the right corner of the robot, third thick line from the blue arc on the right home base fourth line up
 from QuadBotPortMap import *
+drivebase.settings(straight_acceleration=500,turn_acceleration=500)
 drivebase.straight(575)
 drivebase.turn(-90)
 drivebase.straight(450)
@@ -24,7 +25,7 @@ drivebase.turn(-45)
 drivebase.straight(-70)
 drivebase.turn(45)
 drivebase.straight(150)
-drivebase.straight(-80)
+drivebase.straight(-50)
 drivebase.settings(straight_speed=250, turn_rate=193)
 drivebase.turn(-135)
 drivebase.straight(-100)
