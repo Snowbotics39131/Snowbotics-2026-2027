@@ -1,4 +1,3 @@
-#ALL THE RUN NUMBERS BELOW ARE INCORRECT:
 #For up to 200 points, run 1, then 2, then 3:
 #1. Right map run: with the many-purposRight map run: with the many-purposed attachment, pointed forward in right home, back right corner at (-8, 4) from the corner of the launch areaed attachment, pointed forward in right home, back right corner at (-8, 4) from the corner of the launch area
 #2. Map_CollinAttachment: In the left base facing right fifteen sqaures up  and on the thick black line
@@ -8,7 +7,10 @@ from pybricks.hubs import InventorHub
 from pybricks.tools import *
 from gobetweenhomes import *
 hub = InventorHub()
+timer = StopWatch()
+drivebase.heading_control.target_tolerances()
 selection = hub_menu(1, 2, 3, 4, 'R', 'L', '*')
+timer.reset()
 if selection == 1:
     import rightmaprun
 elif selection == 2:
@@ -30,3 +32,4 @@ else:
     print('Pigs fly. (Unreachable code reached.)')
     for _ in range(3):
         hub.speaker.beep()
+print(timer.time()/1000.0)
