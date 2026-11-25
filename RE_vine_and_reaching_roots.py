@@ -23,6 +23,7 @@ drivebase.settings(100)
 drivebase.straight(-100)
 drivebase.straight(30)
 drivebase.straight(-50)
+'''
 drivebase.turn(90)
 drivebase.straight(120)
 drivebase.turn(-90)
@@ -42,23 +43,4 @@ drivebase.turn(90)
 drivebase.straight(-300)
 drivebase.turn(-90)
 drivebase.straight(-20)
-'''drivebase.settings(200)
-drivebase.turn(20)
-drivebase.straight(-160)
-motorAttachment.run_angle(70,-140)
-wait(1500)
-drivebase.settings(115)
-#232
-drivebase.straight(250)
-drivebase.turn(-10)
-#232
-drivebase.straight(50)
-drivebase.turn(20)
-motorAttachment.run_angle(70,80)
-drivebase.turn(5)
-drivebase.straight(-35)
-drivebase.turn(-10)
-#finishes the tangled
-drivebase.straight(-30)
-drivebase.turn(-147)
-drivebase.straight(130)'''
+'''
