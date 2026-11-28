@@ -1,10 +1,10 @@
 from QuadBotPortMap import *
-motorAttachment.run_until_stalled(-400,duty_limit=30)
-motorAttachment.run_angle(300,1320)
+motorAttachment.run_until_stalled(-500,duty_limit=30)
+motorAttachment.run_angle(800,1320)
 drivebase.settings(straight_acceleration=300)
 drivebase.straight(56)#+
 drivebase.turn(6)
-motorAttachment.run_angle(300,-300)
+motorAttachment.run_angle(800,-300)
 motorAttachment.run_angle(800,60)
 #motorAttachment.run_angle(300,300)
 drivebase.straight(-100)
